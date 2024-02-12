@@ -86,3 +86,16 @@ Para renomear um arquivo ou movendo o mesmo para uma nova pasta você pode utili
 Por exemplo, quero mover o meu objeto README.md para uma nova pasta, ```git mv README.md ./objects``` ele vai mover meu objeto README.md para a minha pasta existente objects.
 Agora para você renomear o arquivo, basta você informar o nome existente e após um novo nome, ou seja, o comando ficará assim ```git mv README.md readme.md``` ele vai renomear o meu arquivo que está em maiúsculo para minúsculo, vejam que eu não informei nenhuma pasta, logo meu arquivo não pertence a nenhuma, mas se seu arquivo estiver em alguma pasta, você precisa colocar onde ele está.
 Eu tenho um arquivo chamado `teste.txt` na pasta `objects` se eu quiser renomear ele, preciso fazer isso `git mv ./objects/teste.txt ./objects/helloWorld.txt`.
+
+## Desfazendo alterações
+
+Para você desfazer as suas alterações você pode dar o comando `git checkout`, isso faz com que você saia da branch que você está e todas as alteraçòes são desfeitas, podendo ser chamado isso de `rollback`. 
+`Mais uma palavra nova...` 
+- O rollback é falado quando você faz uma alteração e precisa que ela seja desfeita pois não é necessária ou, poderá trazer algum problema ao projeto ou objeto.
+
+## Ignorando objetos ou pastas
+Para podermos ignorar ou melhor, fazer com que o Git não considere alguma alteração em uma pasta ou objeto X, você pode criar um arquivo chamado `.gitignore` (sim ele precisa ter esse ponto na frente) e dentro dele você informa todas as pastas ou objetos que mesmo que haja qualquer alteração ele as ignore.
+
+## Desfazendo todas as alterações
+Essa parte é um pouco diferente da anterior, aqui você usa o comando `git reset --hard` fazendo com que a sua branch seja completamente resetada fazendo voltar para o estado inicial da branch master.
+Tenham cuidado ao ser feito isso, pois ele vai limpar todo a branch e vai perder até mesmo o os objetos `Unstaged`.
