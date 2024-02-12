@@ -77,3 +77,5 @@ Para você verificar onde ou qual o estatus que seu projeto se encontra, você p
 
 Para renomear um arquivo ou movendo o mesmo para uma nova pasta você pode utilizar o ```git mv```, mas para utilizar isso você precisa prestar atenção para onde você vai colocar, então o comando completo seria ```git mv [nome_do_objeto] [pasta_nova]```.
 Por exemplo, quero mover o meu objeto README.md para uma nova pasta, ```git mv README.md ./objects``` ele vai mover meu objeto README.md para a minha pasta existente objects.
+Agora para você renomear o arquivo, basta você informar o nome existente e após um novo nome, ou seja, o comando ficará assim ```git mv README.md readme.md``` ele vai renomear o meu arquivo que está em maiúsculo para minúsculo, vejam que eu não informei nenhuma pasta, logo meu arquivo não pertence a nenhuma, mas se seu arquivo estiver em alguma pasta, você precisa colocar onde ele está.
+Eu tenho um arquivo chamado `teste.txt` na pasta `objects` se eu quiser renomear ele, preciso fazer isso `git mv ./objects/teste.txt ./objects/helloWorld.txt`.
