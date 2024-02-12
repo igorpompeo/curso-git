@@ -53,3 +53,18 @@ Agora precisamos finalizar e enviar o objeto para o servidor remoto do git.
 Para finalizar e realizar o envio do objeto fazemos o comando ```git push``` que se dá a necessidade a cada git commit dado para oficializar o envio.
 Se for o seu primeiro envio para o repositório remoto, você será alertado pelo git que precisa dar um comando mais completo.
 Comando esse que é: ```git push --set-upstream orgin master```;
+
+## Recebendo alterações
+
+Para recebermos alterações das branches você simplesmente precisa digitar o comando ```git pull```, mas de quando em quanto tempo eu preciso fazer esse comando? Não há um regra muito bem definida mas há uma questão de bom senso ou de senso comum, que é sempre que você for mexer na branch, primeiro de fazer as alterações faça um git pull, para receber qualquer novidades que possa haver na sua branch.
+Também podemos fazer o comando ```git pull origin master``` que isso fará com que você receba as alterações da branch master para a sua branch, o que isso fará de fato? Irá atualizar a branch VS a branch master, sempre que a branch master houver novas alterações.
+
+## Clonando repo novos
+
+Para você clonar qualquer novo repo para a sua máquina localmente, você precisa ter posse do link HTTPS ou do SSH para poder usar o comando.
+Comando que é simples ```git clone [link_git]``` no seu terminal e ele fará o clone, se certifique de que você está na pasta destinada para esse clone para não bagunçar seus próprios objetos.
+
+## Removendo (deletando) arquivos
+
+Para você remover ou deletar um arquivo você precisa dar o comando ```git rm [arquivo]```, porém tenham cuidado ao fazer isso, pois você pode acabar acabando com o seu projeto e também com o dos demais se o objeto for comum ou compartilhado.
+No mundo corporativo, possivelmente haja objetos que serão compartilhados e que você não poderá fazer a remoção ou deleção do mesmo, então possivelmente você apenas tenha que remover sua alteração, isso é possível via o comando ```git revert [hash_commit]``` comando que veremos mais para frente.
