@@ -1,5 +1,8 @@
 # Curso de Git do básico ao avançado
-Nesse curso visto no link [Udemy] `(https://ibm-learning.udemy.com/course/git-e-github-do-basico-ao-avancado-c-gist-e-github-pages)`
+Aqui haverá um resumo de ações e comandos que devemos fazer usando o Git ou GitHub.
+Informações tiradas do curso no link [Udemy] `(https://ibm-learning.udemy.com/course/git-e-github-do-basico-ao-avancado-c-gist-e-github-pages)`
+Também há os pontos de vista de alguém que já mexe com Git há muito tempo. Então pode haver pontos não vistos ou declarados por já ser algo automático ou rotineiro para aquele que vós fala (Eu).
+Lhes recomendo que se quiser aprender bem mais a fundo e vendo todos os pontos assistam o curso.
 
 ## Recomendações
 - Instalar o git no seu SO (sistema operacional):
