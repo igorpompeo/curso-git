@@ -68,3 +68,12 @@ Comando que é simples ```git clone [link_git]``` no seu terminal e ele fará o 
 
 Para você remover ou deletar um arquivo você precisa dar o comando ```git rm [arquivo]```, porém tenham cuidado ao fazer isso, pois você pode acabar acabando com o seu projeto e também com o dos demais se o objeto for comum ou compartilhado.
 No mundo corporativo, possivelmente haja objetos que serão compartilhados e que você não poderá fazer a remoção ou deleção do mesmo, então possivelmente você apenas tenha que remover sua alteração, isso é possível via o comando ```git revert [hash_commit]``` comando que veremos mais para frente.
+
+## Verificando alterações
+
+Para você verificar onde ou qual o estatus que seu projeto se encontra, você pode usar o comando ```git log``` que ele lhe dará todos as alterações que foram feitas no seu projeto ou na branch em questão.
+
+## Mover ou renomear o arquivo
+
+Para renomear um arquivo ou movendo o mesmo para uma nova pasta você pode utilizar o ```git mv```, mas para utilizar isso você precisa prestar atenção para onde você vai colocar, então o comando completo seria ```git mv [nome_do_objeto] [pasta_nova]```.
+Por exemplo, quero mover o meu objeto README.md para uma nova pasta, ```git mv README.md ./objects``` ele vai mover meu objeto README.md para a minha pasta existente objects.
